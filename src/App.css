@@ -1,0 +1,246 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ============================================================== */
+/* GLOBAL INPUT & TEXTAREA: Black Typed Text                      */
+/* ============================================================== */
+
+input,
+textarea,
+select,
+.settings-input,
+.settings-textarea,
+.hi-input {
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important;
+}
+
+/* ============================================================== */
+/* GLOBAL PLACEHOLDERS: Gray (#9ca3af)                            */
+/* (Separated by vendor block to prevent browsers discarding rules) */
+/* ============================================================== */
+
+/* Modern Standard */
+input::placeholder {
+  color: #9ca3af !important;
+  -webkit-text-fill-color: #9ca3af !important;
+  opacity: 1 !important;
+}
+
+textarea::placeholder {
+  color: #9ca3af !important;
+  -webkit-text-fill-color: #9ca3af !important;
+  opacity: 1 !important;
+}
+
+/* Chrome, Safari, Edge, Opera (WebKit) */
+input::-webkit-input-placeholder {
+  color: #9ca3af !important;
+  -webkit-text-fill-color: #9ca3af !important;
+  opacity: 1 !important;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #9ca3af !important;
+  -webkit-text-fill-color: #9ca3af !important;
+  opacity: 1 !important;
+}
+
+/* Firefox 19+ */
+input::-moz-placeholder {
+  color: #9ca3af !important;
+  opacity: 1 !important;
+}
+
+textarea::-moz-placeholder {
+  color: #9ca3af !important;
+  opacity: 1 !important;
+}
+
+/* Internet Explorer 10-11 */
+input:-ms-input-placeholder {
+  color: #9ca3af !important;
+  opacity: 1 !important;
+}
+
+textarea:-ms-input-placeholder {
+  color: #9ca3af !important;
+  opacity: 1 !important;
+}
+
+/* Edge */
+input::-ms-input-placeholder {
+  color: #9ca3af !important;
+  opacity: 1 !important;
+}
+
+textarea::-ms-input-placeholder {
+  color: #9ca3af !important;
+  opacity: 1 !important;
+}
+
+/* ============================================================== */
+/* SETTINGS PAGE SPECIFIC OVERRIDES                               */
+/* ============================================================== */
+
+.settings-input,
+.settings-textarea {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important;
+}
+
+.settings-input::placeholder,
+.settings-textarea::placeholder {
+  color: #9ca3af !important;
+  -webkit-text-fill-color: #9ca3af !important;
+  opacity: 1 !important;
+}
+
+.settings-input::-webkit-input-placeholder,
+.settings-textarea::-webkit-input-placeholder {
+  color: #9ca3af !important;
+  -webkit-text-fill-color: #9ca3af !important;
+  opacity: 1 !important;
+}
+
+/* ============================================================== */
+/* SPLIT SCREEN AUTHENTICATION (LOGIN / REGISTER)                */
+/* ============================================================== */
+
+.split-auth-wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.split-auth-left {
+  flex: 0.7;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: #f9fafb;
+}
+
+.split-auth-right {
+  flex: 1.3;
+  background-image: url('/login.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .split-auth-right {
+    display: block;
+  }
+}
+
+.auth-content-container {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand-logo {
+  max-width: 180px;
+  margin-bottom: 40px;
+}
+
+.auth-heading {
+  font-size: 1.8rem;
+  color: #111827;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.hi-input {
+  width: 100%;
+  padding: 14px 16px;
+  background-color: #ffffff; 
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.hi-input::placeholder {
+  color: #9ca3af !important;
+  -webkit-text-fill-color: #9ca3af !important;
+  opacity: 1 !important;
+}
+
+.hi-input::-webkit-input-placeholder {
+  color: #9ca3af !important;
+  -webkit-text-fill-color: #9ca3af !important;
+  opacity: 1 !important;
+}
+
+.hi-input:focus {
+  border-color: #0558EE;
+  box-shadow: 0 0 0 3px rgba(5, 88, 238, 0.15);
+}
+
+.hi-input:disabled {
+  background-color: #f3f4f6;
+  color: #6b7280 !important;
+  -webkit-text-fill-color: #6b7280 !important;
+}
+
+.hi-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s, background-color 0.2s;
+  background-color: #0558EE; /* Brand Royal Blue */
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.hi-btn:hover {
+  opacity: 0.92;
+}
+
+.auth-footer-text {
+  font-size: 0.9rem;
+  color: #4b5563;
+  text-align: center;
+}
+
+.auth-links {
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
