@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://bulk-pool.onrender.com/api', // or 'http://127.0.0.1:8000' depending on your routes
+    baseURL: 'http://127.0.0.1:8000', // or 'http://127.0.0.1:8000' depending on your routes
 });
 
 // Automatically inject JWT access token into the headers
