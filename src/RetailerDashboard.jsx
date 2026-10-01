@@ -518,7 +518,7 @@ export default function RetailerDashboard({ onLogout }) {
                                 <div style={{ backgroundColor: '#ffffff', padding: '22px 24px', borderRadius: '14px', border: '1px solid #e2e8f0', position: 'relative', overflow: 'hidden', boxShadow: '0 4px 20px -2px rgba(5, 88, 238, 0.05)' }}>
                                     <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '4px', background: 'linear-gradient(90deg, #21E8E6 0%, #0891b2 100%)' }} />
                                     <div style={{ fontSize: '0.78rem', color: '#64748b', fontWeight: '800' }}>ACTIVE POOL PLEDGES</div>
-                                    <div style={{ fontSize: '2rem', fontWeight: '900', color: '#0891b2', margin: '8px 0' }}>
+                                    <div style={{ fontSize: '2rem', fontWeight: '900', color: '#252d2f', margin: '8px 0' }}>
                                         {summary.active_pools_count} Pools
                                     </div>
                                     <div style={{ fontSize: '0.78rem', color: '#64748b' }}>Waiting for target volume</div>
